@@ -19,7 +19,8 @@ if __name__ == '__main__':
     print("Обучение нейросети...")
     _start = time.time()
 
-    nn.fit(X, y, epochs=50000)
+    # Попробую обучить на миллионе эпох
+    nn.fit(X, y, epochs=1000000)
     _end = time.time()
 
     print(f"Обучение закончено: {round(_end - _start,4)}")
